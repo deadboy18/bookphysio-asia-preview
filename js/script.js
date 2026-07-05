@@ -196,7 +196,8 @@ function animateConfetti() {
 // -- TRIGGER: desktop overlay + confetti --
 function triggerDesktop() {
   launchConfetti();
-  deadboyOverlay.classList.add('active');
+  // let confetti rain for a beat before showing the text
+  setTimeout(() => deadboyOverlay.classList.add('active'), 600);
 }
 
 // -- TRIGGER: mobile toast + confetti --
